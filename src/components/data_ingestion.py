@@ -70,4 +70,7 @@ if __name__ == "__main__":
     )
 
     model_trainer = ModelTrainer()
-    print(model_trainer.initiate_model_trainer(train_arr, test_arr))
+    model_score, model_name = model_trainer.initiate_model_trainer(train_arr, test_arr)
+
+    print(f"Model Name: {model_name}")
+    print(f"Model Score: {model_score}")
